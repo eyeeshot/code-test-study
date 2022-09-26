@@ -10,6 +10,15 @@ public class frameRotation {
         //yxyx
         int[][] queries = {{2,2,5,4},{3,3,6,6},{5,1,6,3}};
 
+        int[] result = solution(rows,columns,queries);
+
+        for (int r : result) {
+            System.out.println(r);
+        }
+
+    }
+    public static int[] solution(int rows, int columns, int[][] queries) {
+
         //rows x columns
         int[][] frames = new int[rows][columns];
         int[] answer = new int[queries.length];
@@ -84,15 +93,6 @@ public class frameRotation {
             answer[q] = min;
         }
 
-        for (int a : answer) {
-            System.out.println(a);
-        }
-
-
-    }
-    public int[] solution(int rows, int columns, int[][] queries) {
-
-        int[] answer = {};
         return answer;
     }
 }
