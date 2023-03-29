@@ -42,6 +42,7 @@ public class plusMinus {
             } else {
                 positiveCnt++;
             }
+            totalCnt++;
         }
 
         printPercent(positiveCnt,totalCnt);
